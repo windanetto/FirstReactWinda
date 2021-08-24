@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addTask } from '../store/action/apiAction'
 
-const AddTask = ({ onAdd }) => {
+function AddTask() {
   const [text, setText] = useState('');
   const [day, setDay] = useState('');
   const [reminder, setReminder] = useState(false);
+  const dispatch = useDispatch()
 
   const onSubmit = (e) => {
+    // ini fungsinya untuk stop reload otomatis
     e.preventDefault()
 
     if (!text) {
@@ -13,7 +17,8 @@ const AddTask = ({ onAdd }) => {
       return 
     }
 
-    onAdd({ text, day, reminder })
+    const task = { text, day, reminder }
+    dispatch(addTask(task))
 
     setText('')
     setDay('')

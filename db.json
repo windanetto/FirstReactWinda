@@ -1,16 +1,58 @@
 {
   "tasks": [
     {
-      "text": "winda",
-      "day": "kdjakljf",
-      "reminder": false,
-      "id": 3
-    },
-    {
       "text": "winda ",
       "day": "lagi",
       "reminder": true,
       "id": 4
+    },
+    {
+      "text": "qinda tu nyoba ya",
+      "day": "terus typo lagi nulis nama sendiri",
+      "reminder": false,
+      "id": 116
+    },
+    {
+      "text": "winda",
+      "day": "winda",
+      "reminder": true,
+      "id": 117
+    },
+    {
+      "text": "winda",
+      "day": "cobab lagi hari ini",
+      "reminder": true,
+      "id": 118
+    },
+    {
+      "text": "winda ",
+      "day": "friday",
+      "reminder": false,
+      "id": 119
+    },
+    {
+      "text": "456",
+      "day": "winda",
+      "reminder": true,
+      "id": 120
+    },
+    {
+      "text": "123",
+      "day": "fadhil",
+      "reminder": true,
+      "id": 122
+    },
+    {
+      "text": "winda",
+      "day": "windawindawinda",
+      "reminder": false,
+      "id": 123
+    },
+    {
+      "text": "windawindawinda",
+      "day": "lalallayayaya",
+      "reminder": true,
+      "id": 124
     }
   ]
 }

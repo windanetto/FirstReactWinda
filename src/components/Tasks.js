@@ -1,12 +1,24 @@
 import Task from './Task';
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
+import { fetchTasks } from '../store/action/apiAction'
 
-const Tasks = ({ tasks, onDelete, onToggle }) => {
+function Tasks() {
+  const dispatch = useDispatch()
+  const tasks = useSelector(state => state.tasksReducer.tasksList) 
+  
+  useEffect(() => {
+    dispatch(fetchTasks())
+  }, [])
+  
   return (
     <>
-      {/* looping here, yang dilooping itu component Task */}
+      {/* looping here, yang dilooping itu component Task 
+        onDelete={onDelete} onToggle={onToggle}
+      */}
       {tasks.map((task) => (
         // key beda sama props ya!
-        <Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />
+        <Task key={task.id} task={task} />
       ))}  
     </>
   )
